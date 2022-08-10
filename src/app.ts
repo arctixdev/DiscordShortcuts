@@ -1,4 +1,6 @@
 import axios from 'axios';
+import envy from 'envy';
+const env = envy();
 
 /**
  * Functions that updates Discord user settings
