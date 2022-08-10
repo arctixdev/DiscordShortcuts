@@ -1,19 +1,19 @@
 import axios from 'axios';
 import envy from 'envy';
 const env = envy();
+const TOKEN : string = env.token;
 
 /**
  * Functions that updates Discord user settings
  * @param {string} text content to patch Discord settings with
- * @param {string} token Discord user token
  */
-async function patchDiscordSettings(text : string, token : string) {
+async function patchDiscordSettings(text : string) {
   try {
     await axios(
         {
           url: 'https://ptb.discordapp.com/api/v6/users/@me/settings',
           method: 'PATCH',
-          headers: {'Authorization': token},
+          headers: {'Authorization': TOKEN},
           data: {
             'custom_status': {
               'text': text,
@@ -28,5 +28,4 @@ async function patchDiscordSettings(text : string, token : string) {
 
 patchDiscordSettings(
     'YES IT WORKS',
-    'TOKEN',
 );
