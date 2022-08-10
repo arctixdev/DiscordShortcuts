@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "http": "^0.0.1-security"
+  },
+  "name": "discord-interface",
+  "version": "0.0.1",
+  "main": "dist/app.js",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "start": "tsc && node dist/app.js",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext --fix .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Bangert",
+  "license": "ISC",
+  "description": "Your one and only localy hosted and open source website with shortcuts for your Discord profile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Un10ck3d/DiscordShortcuts.git"
+  }
+}
