@@ -9,3 +9,5 @@ Then cd into the repo directory <br/>
 Install dependencies <br/>
 `npm i` <br/>
 Put your Discord token into `.env`
+Then you can finaly start the service by running <br/>
+`npm run start`
